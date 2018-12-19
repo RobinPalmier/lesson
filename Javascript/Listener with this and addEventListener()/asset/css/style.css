@@ -1,0 +1,31 @@
+.block{
+    display: flex;
+}
+
+.result{
+    margin: 10px;    
+}
+
+.carre{
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+}
+
+.red{
+    background: red;
+}
+
+.blue{
+    background: blue;
+}
+
+.green{
+    background: green;
+}
+
+#rouge, #vert, #bleu{
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+}
