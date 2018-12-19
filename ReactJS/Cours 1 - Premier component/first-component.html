@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Hello World</title>
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+        <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+        <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    </head>
+    <body>
+        <!-- Tout le contenu de l'application se trouve dans la balise app -->
+        <div id="app"></div>
+
+        <script type="text/babel">
+// React a été chargé ligne 7, donc nous pouvons l'appeler.
+// On crée une Class nommé App.
+class App extends React.Component{
+    // La fonction render() permet de faire le rendu du document.
+    render(){
+        return(
+            // Le mot-clef class est déjà réservé, du coup en JSX on utilise comme attribut className au lieu de class.
+            <div className="content">
+                <p>Hello World !</p>
+            </div>
+        )
+    }
+}
+
+// Pour afficher le message sur le navigateur, nous devons passer par le DOM virtuel.
+// Le DOM virtuel a été chargé à la ligne 8.
+ReactDOM.render(<App />, document.getElementById('app'));
+// <App /> = nom du composant (ligne 17).
+        </script>
+    </body>
+</html>
